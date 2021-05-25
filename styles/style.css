@@ -28,7 +28,7 @@ body{
     grid-gap: 20px;
     width: 940px;
     max-width: 100%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .card{
@@ -78,6 +78,23 @@ body{
     background-color: red;
 }
 
+.tag-purple{
+    background-color: purple;
+}
+
+.tag-pink{
+    background-color: pink;
+    color: #333;
+}
+
+.tag-green{
+    background-color: green;
+}
+
+.tag-black{
+    background-color: black;
+}
+
 .user{
     display: flex;
     margin-top: auto;
@@ -97,4 +114,16 @@ body{
 
 .user-info small{
     color: #888785;
+}
+
+@media(max-width: 991px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 767px){
+    .container{
+        grid-template-columns: repeat 1fr;
+    }
 }
